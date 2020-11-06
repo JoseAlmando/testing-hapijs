@@ -13,7 +13,6 @@ const config = require("./config/config");
 const init = async () => {
   const server = Hapi.server({
     port: config.PORT,
-    host: config.HOST,
     routes: {
       cors: true,
     },
